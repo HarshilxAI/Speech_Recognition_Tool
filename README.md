@@ -8,7 +8,8 @@
 
 ## 📸 Demo
 
-![Screenshot](Screenshot_SRT.jpeg)
+<img src="Screenshot_SRT.jpeg" alt="Screenshot" width="500" height="300"/>
+
 
 
 ---
