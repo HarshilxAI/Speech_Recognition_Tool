@@ -8,7 +8,8 @@
 
 ## 📸 Demo
 
-> _Add a screenshot or GIF of your app UI + transcription in action here._
+![Screenshot](Screenshot_SRT.jpeg)
+
 
 ---
 
