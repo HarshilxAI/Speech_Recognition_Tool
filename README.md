@@ -8,7 +8,7 @@
 
 ## 📸 Demo
 
-<img src="Screenshot_SRT.jpeg" alt="Screenshot" width="500" height="300"/>
+<img src="Screenshot_SRT.jpeg" alt="Screenshot" width="500" height="550"/>
 
 
 
@@ -38,7 +38,7 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/speech-recognition-tool.git
+git clone https://github.com/HarshilxAI/speech-recognition-tool.git
 cd speech-recognition-tool
 
 # 2. Install the dependencies
