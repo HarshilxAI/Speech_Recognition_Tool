@@ -51,7 +51,7 @@ http://127.0.0.1:5000/
 ```
 
 ## 📦 Requirements
-flask
-openai-whisper
-torch
-werkzeug
+flask  
+openai-whisper  
+torch  
+werkzeug  
