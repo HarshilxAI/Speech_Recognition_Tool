@@ -1,0 +1,160 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+body {
+  background: linear-gradient(-45deg, #121212, #1a1a1a, #202020);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Background animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: scale(0.9); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Container */
+.container {
+  background: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 12px;
+  border: 2px solid #00ffff; /* ✅ Cyan Border */
+  animation: fadeIn 1s ease-in-out;
+  max-width: 500px;
+  width: 90%;
+}
+
+.container:focus-within {
+  border-color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4); /* subtle white glow */
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #00ff7f; /* Green */
+}
+
+/* File Input */
+input[type="file"] {
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid #00ffff;
+  background-color: #1f1f1f;
+  width: 100%;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+
+input[type="file"]:hover {
+  border-color: #00ffff;
+  cursor: pointer;
+}
+
+input[type="file"]:focus {
+  border-color: white;
+  box-shadow: 0 0 10px white;
+}
+
+/* Buttons */
+button {
+  background: rgba(0, 191, 255, 0.2);
+  border: 1px solid #00bfff;
+  backdrop-filter: blur(8px);
+  color: white;
+  padding: 10px 18px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #00bfff;
+  opacity: 0.9;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Clicked state */
+button:active {
+  opacity: 0.7;
+}
+
+/* Clear Button */
+button#clear-btn {
+  background-color: #ff4d4d;
+  margin-left: 10px;
+}
+
+button#clear-btn:hover {
+  background-color: #e60000;
+}
+
+/* Optional processing animation (can be added via JS class) */
+button.processing::after {
+  content: " ⏳";
+  animation: pulse-loader 1s infinite;
+}
+
+@keyframes pulse-loader {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
+}
+
+/* Transcription Box */
+#transcription-text {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border: 1px solid #00ffff;
+  border-radius: 8px;
+  font-style: italic;
+  line-height: 1.6;
+  max-height: 400px;
+  height: 250px;
+  font-size: 16px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+/* Scrollbar Styling */
+#transcription-text::-webkit-scrollbar {
+  width: 8px;
+}
+
+#transcription-text::-webkit-scrollbar-track {
+  background: #1f1f1f;
+}
+
+#transcription-text::-webkit-scrollbar-thumb {
+  background: #00ffff;
+  border-radius: 6px;
+}
