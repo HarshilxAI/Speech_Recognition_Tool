@@ -1,59 +1,52 @@
-# 🗣️ SpeakEasy - A Speech to Text Transcription Tool
+# 🗣️ Speech Recognition Tool
 
-## 🎯 Description
-
-**SpeakEasy** is a simple and intuitive web-based tool that allows users to convert audio files into readable text using a speech recognition system. Built using Python, Flask, and OpenAI's Whisper model, this tool processes short audio clips and outputs high-quality transcriptions – all offline.
+A browser-based speech recognition tool that converts `.mp3`/`.wav` audio files into text using advanced transcription models. Designed for AI and NLP tasks, it supports offline and online transcription.
 
 ---
 
-## 📸 Demo
+**📸 Visuals**
 
-<img src="Screenshot_SRT.jpeg" alt="Screenshot" width="500" height="550"/>
-
-
+<img src="Screenshot_SRT.jpeg" alt="Speech Recognition Tool Screenshot" width="400"/>
 
 ---
 
-## 🧠 Features
-
-- 🎤 Upload `.mp3` or `.wav` audio files  
-- ⚡ Fast & accurate offline transcription using Whisper  
-- 🌑 Clean dark-themed user interface  
-- 🔘 Transcribe button changes based on process state  
-- 🧹 Clear button to reset uploaded file and transcription  
-- 💻 Runs fully offline (no internet needed after setup)
+**🚀 Features**
+- 🎤 Upload audio files (`.mp3`, `.wav`) and get instant transcription  
+- ⚙️ Works offline using OpenAI's Whisper models  
+- 🧠 Smart UI updates: "Transcribing..." ➝ "Transcribed", with error handling & reset
 
 ---
 
-## 🛠️ Tech Stack
-
-- **Frontend**: HTML, CSS, JavaScript  
-- **Backend**: Python (Flask)  
-- **Model**: OpenAI Whisper (offline)  
-- **Hosting**: Locally (Railway / Render / Replit optional)
+**🛠️ Tech Stack**
+| **Section**   | **Tools Used**                                   |
+|---------------|--------------------------------------------------|
+| **Frontend**  | HTML, CSS, JavaScript                            |
+| **Backend**   | Python, Flask                                    |
+| **Libraries** | Whisper, PyDub, Librosa, NumPy, Matplotlib       |
+| **Hosting**   | Localhost (offline) / GitHub Pages / (Upcoming)  |
 
 ---
 
-## ⚙️ How to Run Locally
+**📚 What I Learned**
+- How to use OpenAI's Whisper for local transcription  
+- Managing Flask routes for file handling and JSON responses  
+- Designing UI behavior with only CSS and JavaScript  
+- Handling model installation issues and deployment constraints  
+- Working with `.wav` files, plotting audio waveforms, and audio features extraction
 
-```bash
-# 1. Clone the repository
-git clone https://github.com/HarshilxAI/speech-recognition-tool.git
-cd speech-recognition-tool
+---
 
-# 2. Install the dependencies
-pip install -r requirements.txt
+**🤝 Contributions**
 
-# 3. Run the app
-python app.py
+This is a solo project built and maintained by me as part of my AI Internship & DEVIL Mode (FORCE FOCUS arc).  
+More contributors are welcome in future versions with multi-language support.
 
-# 4. Open in browser
-http://127.0.0.1:5000/
+---
 
-```
+**👤 Owner** - **Harshil Gurjar**
 
-## 📦 Requirements
-flask  
-openai-whisper  
-torch  
-werkzeug  
+**📬 Contact**
+- 📧 Gmail: [hdgurjar2323@gmail.com](mailto:hdgurjar2323@gmail.com)  
+- 🔗 LinkedIn: [https://www.linkedin.com/in/harshil-gurjar23](https://www.linkedin.com/in/harshil-gurjar23)
+
+---
