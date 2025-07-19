@@ -15,6 +15,6 @@ def convert_mp3_to_wav(mp3_path, output_folder):
 
 # Example usage
 if __name__ == "__main__":
-    mp3_file = "sample_audio.mp3"  # 🔄 Replace with your file
-    output_dir = "."               # 🔄 Or use a full path like "converted_audio/"
+    mp3_file = "sample_audio.mp3"  
+    output_dir = "."              
     convert_mp3_to_wav(mp3_file, output_dir)
